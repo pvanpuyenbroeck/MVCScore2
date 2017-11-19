@@ -84,7 +84,7 @@
         <!--Register-->
         <scene sceneID="p3e-TH-FOW">
             <objects>
-                <viewController id="8ll-aq-68t" userLabel="Register" sceneMemberID="viewController">
+                <viewController id="8ll-aq-68t" userLabel="Register" customClass="RegisterViewController" customModule="MVCScore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dKR-Fa-YH3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +121,7 @@
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Register"/>
                                         <connections>
+                                            <action selector="RegisterClicked:" destination="8ll-aq-68t" eventType="touchUpInside" id="UFv-qv-Fen"/>
                                             <action selector="loginAuth:" destination="vKI-0H-J72" eventType="touchUpInside" id="igl-e5-DRy"/>
                                         </connections>
                                     </button>
@@ -146,10 +147,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uIt-l2-t1T"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="hEd-PB-oUI" id="CvM-3V-zcM"/>
+                        <outlet property="paswoord" destination="lEs-MT-5eH" id="pR2-hE-qZS"/>
+                        <segue destination="FVo-Sv-oAP" kind="show" identifier="GoToApp" id="2rg-pZ-dBQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIk-W7-ioB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="583"/>
+            <point key="canvasLocation" x="1054" y="561"/>
         </scene>
         <!--Login-->
         <scene sceneID="ZBI-ki-qup">
@@ -246,7 +252,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcx-6B-Q9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1845.5999999999999" y="-141.67916041979012"/>
+            <point key="canvasLocation" x="2126" y="141"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="2rg-pZ-dBQ"/>
+    </inferredMetricsTieBreakers>
 </document>

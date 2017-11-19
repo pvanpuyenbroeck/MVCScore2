@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Firebase
+import SVProgressHUD
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var paswoord: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +26,18 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func RegisterClicked(_ sender: Any) {
+        Auth.auth().createUser(withEmail: email.text!, password: paswoord.text!){
+            (user,error) in
+            if error != nil{
+                print(error)
+            }else{
+                print("User register succesfull")
+                self.performSegue(withIdentifier: "GoToApp", sender: self)
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
