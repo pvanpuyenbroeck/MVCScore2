@@ -21,6 +21,7 @@
 		F5568FB91FC1A9750012C4A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5568FB81FC1A9750012C4A4 /* LoginViewController.swift */; };
 		F5568FBC1FC1D31E0012C4A4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5568FBA1FC1D31E0012C4A4 /* RegisterViewController.swift */; };
 		F5568FBD1FC1D31E0012C4A4 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5568FBB1FC1D31E0012C4A4 /* RegisterViewController.xib */; };
+		F5568FBF1FC1E7580012C4A4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5568FBE1FC1E7580012C4A4 /* AppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F5568FB81FC1A9750012C4A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F5568FBA1FC1D31E0012C4A4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F5568FBB1FC1D31E0012C4A4 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		F5568FBE1FC1E7580012C4A4 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				F5568FB81FC1A9750012C4A4 /* LoginViewController.swift */,
 				F5568FBA1FC1D31E0012C4A4 /* RegisterViewController.swift */,
 				F5568FBB1FC1D31E0012C4A4 /* RegisterViewController.xib */,
+				F5568FBE1FC1E7580012C4A4 /* AppViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -395,22 +398,34 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MVCScore/Pods-MVCScore-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -510,6 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5568FBF1FC1E7580012C4A4 /* AppViewController.swift in Sources */,
 				F5568FB91FC1A9750012C4A4 /* LoginViewController.swift in Sources */,
 				F5568F881FC18D420012C4A4 /* ViewController.swift in Sources */,
 				F5568F861FC18D420012C4A4 /* AppDelegate.swift in Sources */,
