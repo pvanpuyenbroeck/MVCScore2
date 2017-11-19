@@ -27,10 +27,16 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginAuth(_ sender: Any) {
+        SVProgressHUD.show()
+        
         let alertFail = UIAlertController(title: "Authentication failed", message: "Wrong credentials", preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertFail.addAction(defaultAction)
+        
         Auth.auth().signIn(withEmail: EmailText.text!, password: Password.text!) { (user, error) in
             if error != nil {
                 self.present(alertFail, animated: true, completion: nil)
+                SVProgressHUD.dismiss()
             }else{
                 print("Login Succesfull")
                 SVProgressHUD.dismiss()

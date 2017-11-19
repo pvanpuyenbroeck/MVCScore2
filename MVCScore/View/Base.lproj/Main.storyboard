@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ax1-LM-Mhb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVCScore" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,15 +76,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="o2z-cP-SBJ"/>
+                    <connections>
+                        <segue destination="FVo-Sv-oAP" kind="push" identifier="GoToApp" id="daG-td-lYV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="471.19999999999999" y="208.24587706146929"/>
         </scene>
         <!--Register-->
         <scene sceneID="p3e-TH-FOW">
             <objects>
-                <viewController id="8ll-aq-68t" userLabel="Register" customClass="RegisterViewController" customModule="MVCScore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Register" id="8ll-aq-68t" userLabel="Register" customClass="RegisterViewController" customModule="MVCScore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dKR-Fa-YH3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +113,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmt-Ff-XAu">
                                         <rect key="frame" x="62.5" y="109" width="250" height="30"/>
@@ -155,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIk-W7-ioB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="561"/>
+            <point key="canvasLocation" x="1392.8" y="560.86956521739137"/>
         </scene>
         <!--Login-->
         <scene sceneID="ZBI-ki-qup">
@@ -184,7 +188,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZC5-Qf-YVm">
                                         <rect key="frame" x="62" y="109" width="250" height="30"/>
@@ -223,12 +227,12 @@
                     <connections>
                         <outlet property="EmailText" destination="f3c-KR-3Sz" id="1UP-jm-qJP"/>
                         <outlet property="Password" destination="dUN-2P-CiU" id="Vdj-RX-FgH"/>
-                        <segue destination="FVo-Sv-oAP" kind="show" identifier="GoToAapp" id="GTx-1b-khY"/>
+                        <segue destination="FVo-Sv-oAP" kind="show" identifier="GoToApp" id="GTx-1b-khY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUF-Zh-bFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053.5999999999999" y="-149.77511244377811"/>
+            <point key="canvasLocation" x="1392.8" y="-149.77511244377811"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="myS-DV-hWX">
@@ -249,10 +253,29 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sq2-ab-dnR"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AkS-gE-jhT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcx-6B-Q9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2126" y="141"/>
+            <point key="canvasLocation" x="2472.8000000000002" y="198.35082458770617"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vVC-D7-DcN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ax1-LM-Mhb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HRL-EL-g8G">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CaT-ds-8Yc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7V-K4-eWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233" y="208"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
