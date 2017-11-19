@@ -19,6 +19,8 @@
 		F5568FA61FC18D420012C4A4 /* MVCScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5568FA51FC18D420012C4A4 /* MVCScoreUITests.swift */; };
 		F5568FB41FC1954B0012C4A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5568FB31FC1954A0012C4A4 /* GoogleService-Info.plist */; };
 		F5568FB91FC1A9750012C4A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5568FB81FC1A9750012C4A4 /* LoginViewController.swift */; };
+		F5568FBC1FC1D31E0012C4A4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5568FBA1FC1D31E0012C4A4 /* RegisterViewController.swift */; };
+		F5568FBD1FC1D31E0012C4A4 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5568FBB1FC1D31E0012C4A4 /* RegisterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		F5568FA71FC18D420012C4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5568FB31FC1954A0012C4A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F5568FB81FC1A9750012C4A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F5568FBA1FC1D31E0012C4A4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F5568FBB1FC1D31E0012C4A4 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,8 @@
 				F5568F871FC18D420012C4A4 /* ViewController.swift */,
 				F5568F851FC18D420012C4A4 /* AppDelegate.swift */,
 				F5568FB81FC1A9750012C4A4 /* LoginViewController.swift */,
+				F5568FBA1FC1D31E0012C4A4 /* RegisterViewController.swift */,
+				F5568FBB1FC1D31E0012C4A4 /* RegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5568F901FC18D420012C4A4 /* LaunchScreen.storyboard in Resources */,
+				F5568FBD1FC1D31E0012C4A4 /* RegisterViewController.xib in Resources */,
 				F5568FB41FC1954B0012C4A4 /* GoogleService-Info.plist in Resources */,
 				F5568F8D1FC18D420012C4A4 /* Assets.xcassets in Resources */,
 				F5568F8B1FC18D420012C4A4 /* Main.storyboard in Resources */,
@@ -506,6 +513,7 @@
 				F5568FB91FC1A9750012C4A4 /* LoginViewController.swift in Sources */,
 				F5568F881FC18D420012C4A4 /* ViewController.swift in Sources */,
 				F5568F861FC18D420012C4A4 /* AppDelegate.swift in Sources */,
+				F5568FBC1FC1D31E0012C4A4 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
