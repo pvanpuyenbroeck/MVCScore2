@@ -254,8 +254,7 @@
                                     <color key="titleShadowColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="AddCollectionClicked:" destination="FVo-Sv-oAP" eventType="touchUpInside" id="r8g-06-Vs1"/>
-                                    <segue destination="OpU-5Y-zIJ" kind="show" identifier="MakeTeam" id="1Fo-kO-xpF"/>
+                                    <segue destination="OpU-5Y-zIJ" kind="show" id="27k-k8-3Ko"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvC-eb-GzC">
@@ -284,9 +283,6 @@
                         <viewLayoutGuide key="safeArea" id="sq2-ab-dnR"/>
                     </view>
                     <navigationItem key="navigationItem" id="AkS-gE-jhT"/>
-                    <connections>
-                        <outlet property="addCollectionButton" destination="OXM-sy-1fu" id="Or3-lY-473"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcx-6B-Q9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -332,11 +328,12 @@
                     </view>
                     <connections>
                         <outlet property="TeamNameText" destination="DWV-uM-SSL" id="f14-HE-t3f"/>
+                        <segue destination="FVo-Sv-oAP" kind="show" identifier="GoToApp" id="Wbc-zR-NKz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n9p-5J-nmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3485.5999999999999" y="-71.514242878560722"/>
+            <point key="canvasLocation" x="3482" y="-103"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vVC-D7-DcN">
@@ -358,6 +355,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2rg-pZ-dBQ"/>
+        <segue reference="27k-k8-3Ko"/>
+        <segue reference="Wbc-zR-NKz"/>
     </inferredMetricsTieBreakers>
 </document>

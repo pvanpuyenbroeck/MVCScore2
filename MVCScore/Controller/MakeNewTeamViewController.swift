@@ -25,7 +25,7 @@ let defaultStore = Firestore.firestore()
 
     @IBAction func AddTeamClick(_ sender: Any) {
         let alertcontroller = UIAlertController(title: "Not possible", message: "Team name can not be empty", preferredStyle: .alert)
-        let alertAddedController = UIAlertController(title: "Success" , message: "Team \(TeamNameText.text) added", preferredStyle: .alert)
+        let alertAddedController = UIAlertController(title: "Success" , message: "Team \(TeamNameText.text!) added", preferredStyle: .alert)
         
         alertcontroller.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         alertAddedController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
