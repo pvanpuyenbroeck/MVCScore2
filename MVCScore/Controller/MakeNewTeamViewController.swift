@@ -10,19 +10,19 @@ import UIKit
 import Firebase
 
 class MakeNewTeamViewController: UIViewController {
-
+    
     @IBOutlet weak var TeamNameText: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-let defaultStore = Firestore.firestore()
+    let defaultStore = Firestore.firestore()
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func AddTeamClick(_ sender: Any) {
         let alertcontroller = UIAlertController(title: "Not possible", message: "Team name can not be empty", preferredStyle: .alert)
         let alertAddedController = UIAlertController(title: "Success" , message: "Team \(TeamNameText.text!) added", preferredStyle: .alert)
@@ -40,17 +40,21 @@ let defaultStore = Firestore.firestore()
     }
     
     func AddTeam(){
-        var TeamRef: DocumentReference? = nil
-        TeamRef = defaultStore.collection("Team").addDocument(data: [
-            "Name": TeamNameText.text!]){
-                err in
-                if let err = err{
-                    print("Error adding document: \(err)")
-                }
-                else{
-                    print("Document added with ID: \(TeamRef!.documentID)")
-                    self.TeamNameText.text = ""
-                }
+        //        var TeamRef: DocumentReference? = nil
+        defaultStore.collection("Team").document(self.TeamNameText.text!).setData([
+            "Name": TeamNameText.text!
+            
+            
+        ]){
+            err in
+            if let err = err{
+                print("Error adding document: \(err)")
+            }
+            else{
+                print("Document added with ID: \(self.TeamNameText.text)")
+                self.TeamNameText.text = ""
+            }
+            
         }
     }
 }

@@ -23,6 +23,10 @@
 		F5568FBC1FC1D31E0012C4A4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5568FBA1FC1D31E0012C4A4 /* RegisterViewController.swift */; };
 		F5568FBD1FC1D31E0012C4A4 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5568FBB1FC1D31E0012C4A4 /* RegisterViewController.xib */; };
 		F5568FBF1FC1E7580012C4A4 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5568FBE1FC1E7580012C4A4 /* AppViewController.swift */; };
+		F5C588331FD178B6006DBB03 /* TeamCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C588311FD178B6006DBB03 /* TeamCellTableViewCell.swift */; };
+		F5C588341FD178B6006DBB03 /* TeamCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5C588321FD178B6006DBB03 /* TeamCellTableViewCell.xib */; };
+		F5C588361FD1B673006DBB03 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C588351FD1B673006DBB03 /* Team.swift */; };
+		F5C588381FD1B6FA006DBB03 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C588371FD1B6FA006DBB03 /* Players.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		F5568FBA1FC1D31E0012C4A4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F5568FBB1FC1D31E0012C4A4 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		F5568FBE1FC1E7580012C4A4 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		F5C588311FD178B6006DBB03 /* TeamCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCellTableViewCell.swift; sourceTree = "<group>"; };
+		F5C588321FD178B6006DBB03 /* TeamCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamCellTableViewCell.xib; sourceTree = "<group>"; };
+		F5C588351FD1B673006DBB03 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		F5C588371FD1B6FA006DBB03 /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +188,8 @@
 		F5568FB51FC199CF0012C4A4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F5C588351FD1B673006DBB03 /* Team.swift */,
+				F5C588371FD1B6FA006DBB03 /* Players.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +197,7 @@
 		F5568FB61FC199D90012C4A4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F5C588301FD17868006DBB03 /* custom cell */,
 				F5568F891FC18D420012C4A4 /* Main.storyboard */,
 				F5568F8E1FC18D420012C4A4 /* LaunchScreen.storyboard */,
 			);
@@ -205,6 +216,15 @@
 				F5229E4F1FCABFD000D26020 /* MakeNewTeamViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5C588301FD17868006DBB03 /* custom cell */ = {
+			isa = PBXGroup;
+			children = (
+				F5C588311FD178B6006DBB03 /* TeamCellTableViewCell.swift */,
+				F5C588321FD178B6006DBB03 /* TeamCellTableViewCell.xib */,
+			);
+			path = "custom cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +347,7 @@
 				F5568FBD1FC1D31E0012C4A4 /* RegisterViewController.xib in Resources */,
 				F5568FB41FC1954B0012C4A4 /* GoogleService-Info.plist in Resources */,
 				F5568F8D1FC18D420012C4A4 /* Assets.xcassets in Resources */,
+				F5C588341FD178B6006DBB03 /* TeamCellTableViewCell.xib in Resources */,
 				F5568F8B1FC18D420012C4A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,10 +549,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5C588381FD1B6FA006DBB03 /* Players.swift in Sources */,
 				F5568FBF1FC1E7580012C4A4 /* AppViewController.swift in Sources */,
 				F5568FB91FC1A9750012C4A4 /* LoginViewController.swift in Sources */,
 				F5229E501FCABFD000D26020 /* MakeNewTeamViewController.swift in Sources */,
 				F5568F881FC18D420012C4A4 /* ViewController.swift in Sources */,
+				F5C588361FD1B673006DBB03 /* Team.swift in Sources */,
+				F5C588331FD178B6006DBB03 /* TeamCellTableViewCell.swift in Sources */,
 				F5568F861FC18D420012C4A4 /* AppDelegate.swift in Sources */,
 				F5568FBC1FC1D31E0012C4A4 /* RegisterViewController.swift in Sources */,
 			);
